@@ -1,0 +1,309 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgba(40, 40, 40);
+}
+
+nav {
+  padding-right: 0;
+}
+
+nav ul {
+  width: 100%;
+  position: fixed;
+  font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+  font-size: 1.5rem;
+  padding-top: 30px;
+  padding-bottom: 15px;
+  padding-right: 10px;
+  text-align: right;
+  text-transform: uppercase;
+  background-color: rgba(200, 200, 200, 0.5);
+}
+
+@media screen and (min-width: 481px) {
+  nav li {
+    list-style-type: none;
+    display: inline-block;
+    margin-inline: 0.45rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  nav li {
+    list-style-type: none;
+    display: inline-block;
+    margin-inline: 0.6rem;
+  }
+}
+
+nav li a {
+  text-decoration: none;
+  color: rgb(30, 30, 30, 0.8);
+}
+
+nav li a:hover {
+  color: goldenrod;
+}
+
+@media screen and (min-width: 481px) {
+  #home {
+    width: 110%;
+    height: auto;
+    min-height: 100vh;
+    background-image: url("img/modern_office.png");
+    display: flex;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 992px) {
+  #home {
+    width: 110%;
+    height: auto;
+    min-height: 100vh;
+    background-image: url("img/modern_office.png");
+    display: block;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+  }
+}
+
+.welcome {
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-size: 1.9rem;
+  font-weight: 600;
+  color: rgba(255, 250, 250, 0.676);
+  text-shadow: 2px 2px 3px;
+  padding-top: 200px;
+  padding-left: 70px;
+  line-height: 1.5;
+  word-spacing: 0.2em;
+}
+
+.home.nowrap {
+  white-space: nowrap;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+  color: rgb(250, 250, 250);
+  font-size: 2rem;
+  word-spacing: 0.2em;
+  text-shadow: 1px 1px 1.5px;
+  padding-left: 150px;
+  padding-top: 100px;
+}
+
+.to_golden {
+  color: goldenrod;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 481px) {
+  .boxes {
+    padding-top: 50px;
+    padding-left: 150px;
+    padding-right: 150px;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .boxes {
+    padding-top: 50px;
+    padding-left: 150px;
+    padding-right: 150px;
+    min-height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .box {
+    width: 400px;
+    min-width: 200px;
+    min-height: 200px;
+    border: 2px solid rgb(70, 70, 70);
+    border-radius: 5%;
+    background-color: rgb(60, 60, 60);
+    color: rgb(250, 250, 250);
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    padding: 1.2rem;
+    box-shadow: 1px 1px 2px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .box {
+    width: 320px;
+    min-width: 200px;
+    min-height: 200px;
+    border: 2px solid rgb(70, 70, 70);
+    border-radius: 5%;
+    background-color: rgb(60, 60, 60);
+    color: rgb(250, 250, 250);
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    padding: 1.2rem;
+    box-shadow: 1px 1px 2px;
+  }
+}
+
+.box_hover:hover {
+  color: goldenrod;
+}
+
+.box h3 {
+  text-transform: uppercase;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.box img {
+  width: 20%;
+  height: auto;
+  background-color: goldenrod;
+  border: 1px solid goldenrod;
+  border-radius: 5%;
+}
+
+#pricing {
+  font-family: sans-serif;
+}
+
+.plan {
+  display: flex;
+  padding-top: 30px;
+  padding-left: 150px;
+  padding-right: 150px;
+  gap: 2rem;
+}
+
+.price {
+  padding-top: 20px;
+  padding-bottom: 1rem;
+  font-weight: 500;
+  font-size: 2rem;
+  text-shadow: 1px 1px 2px;
+  color: white;
+}
+
+#choose {
+  padding-top: 40px;
+  padding-left: 150px;
+  color: white;
+}
+
+.plan ul {
+  display: flex;
+  color: white;
+  list-style-type: circle;
+  list-style-position: inside;
+  padding-bottom: 10px;
+}
+
+.inner_box {
+  padding-left: 50px;
+  gap: 1rem;
+  width: 370px;
+}
+
+.client {
+  width: 150%;
+  padding: 30px;
+}
+
+.client img {
+  border-color: rgb(30, 30, 30);
+  border-radius: 50%;
+}
+
+figcaption {
+  display: inline;
+  padding-left: 10px;
+}
+
+.contactUs {
+  color: white;
+  font-size: 2rem;
+  font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+  margin-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  margin-right: 20px;
+}
+
+#contact div {
+  color: white;
+  padding-left: 150px;
+  padding-right: 150px;
+  gap: 2rem;
+}
+
+#contact div p {
+  padding: 1.5rem;
+  font-size: 1.2rem;
+}
+
+form input {
+  height: 1.5rem;
+  font-size: 1.3rem;
+  border: none;
+  border-bottom: 2px solid goldenrod;
+  background-color: rgb(40, 40, 40);
+  color: white;
+}
+
+form textarea {
+  border: none;
+  border-bottom: 2px solid goldenrod;
+  text-decoration: 2px solid goldenrod;
+  background-color: rgb(40, 40, 40);
+  color: white;
+  height: 1.3rem;
+  font-size: 1.1rem;
+}
+
+button {
+  width: 4rem;
+  height: auto;
+  border: 2px double rgb(20, 20, 20);
+  background-color: goldenrod;
+}
+
+fieldset {
+  margin-left: 150px;
+  border: none;
+}
+
+.info {
+  font-size: 1.2rem;
+  color: white;
+}
+
+.info a {
+  text-decoration: none;
+  color: white;
+}
